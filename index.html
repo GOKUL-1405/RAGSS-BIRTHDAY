@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A magical birthday surprise for Ragsss — an enchanted world of memories, letters, and love created by Gokul." />
+  <title>Ragsss's Little World — A Magical Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ══════════════════════════════════════════════════════════════
+       ULTRA-LUXURY ENCHANTED ENTRANCE PORTAL
+       Crafted with pure love for Ragsss
+       ══════════════════════════════════════════════════════════════ */
+    :root {
+      --portal-pink: #f7d2e0;
+      --portal-rose: #e685a4;
+      --portal-lavender: #d8c7ff;
+      --portal-gold: #f3c98b;
+      --portal-dark: #221224;
+      --portal-card-bg: rgba(34, 18, 34, 0.72);
+      --portal-glass-border: rgba(255, 255, 255, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body.portal-body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 50% 15%, #4a2444 0%, #2a1428 45%, #140a16 100%);
+      color: #fff;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 3.5rem 1rem 2.5rem;
+      position: relative;
+    }
+
+    /* ─── Hanging Fairy Lights Garland ─── */
+    .fairy-lights-garland {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 48px;
+      pointer-events: none;
+      z-index: 50;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 0 1rem;
+    }
+
+    .fairy-lights-garland::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 1px 4px rgba(243, 201, 139, 0.2);
+    }
+
+    .fairy-bulb {
+      position: relative;
+      width: 14px;
+      height: 22px;
+      border-radius: 50% 50% 45% 45%;
+      margin-top: 10px;
+      animation: fairyTwinkle 2.5s ease-in-out infinite alternate;
+    }
+
+    .fairy-bulb::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background: #7d6b56;
+      border-radius: 2px;
+    }
+
+    .fairy-bulb::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: inherit;
+      filter: blur(8px);
+      opacity: 0.75;
+      z-index: -1;
+    }
+
+    .fairy-bulb.b-gold   { background: #ffd166; box-shadow: 0 0 16px #ffd166; animation-delay: 0.1s; }
+    .fairy-bulb.b-rose   { background: #f7a8b8; box-shadow: 0 0 16px #f7a8b8; animation-delay: 0.6s; }
+    .fairy-bulb.b-mint   { background: #b5e48c; box-shadow: 0 0 16px #b5e48c; animation-delay: 1.1s; }
+    .fairy-bulb.b-violet { background: #d0bfff; box-shadow: 0 0 16px #d0bfff; animation-delay: 1.7s; }
+
+    @keyframes fairyTwinkle {
+      0%, 100% { transform: scale(0.92) rotate(-3deg); opacity: 0.75; filter: brightness(0.9); }
+      50%      { transform: scale(1.12) rotate(3deg); opacity: 1; filter: brightness(1.35); }
+    }
+
+    /* ─── Ambient Animated Aurora Layer ─── */
+    .aurora-bg {
+      position: fixed;
+      inset: -40%;
+      background: 
+        radial-gradient(circle at 25% 30%, rgba(230, 133, 164, 0.32) 0%, transparent 40%),
+        radial-gradient(circle at 75% 60%, rgba(216, 199, 255, 0.28) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(243, 201, 139, 0.22) 0%, transparent 40%),
+        radial-gradient(circle at 10% 80%, rgba(247, 186, 208, 0.2) 0%, transparent 35%);
+      filter: blur(70px);
+      animation: auroraRotate 28s ease-in-out infinite alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes auroraRotate {
+      0%   { transform: scale(1) rotate(0deg); }
+      50%  { transform: scale(1.12) rotate(8deg); }
+      100% { transform: scale(1.2) rotate(16deg); }
+    }
+
+    /* ─── Glowing Ethereal Bokeh Spheres ─── */
+    .bokeh-sphere {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      filter: blur(80px);
+      animation: floatBokeh 16s ease-in-out infinite alternate;
+    }
+
+    .bokeh-1 {
+      width: 420px;
+      height: 420px;
+      top: 5%;
+      left: 10%;
+      background: radial-gradient(circle, rgba(247, 186, 208, 0.4) 0%, transparent 70%);
+      animation-duration: 18s;
+    }
+
+    .bokeh-2 {
+      width: 380px;
+      height: 380px;
+      bottom: 10%;
+      right: 8%;
+      background: radial-gradient(circle, rgba(243, 201, 139, 0.32) 0%, transparent 70%);
+      animation-duration: 22s;
+    }
+
+    .bokeh-3 {
+      width: 320px;
+      height: 320px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(216, 199, 255, 0.25) 0%, transparent 70%);
+      animation-duration: 14s;
+    }
+
+    @keyframes floatBokeh {
+      0%   { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(35px, -30px) scale(1.15); }
+    }
+
+    /* ─── Animated Floating Butterflies ─── */
+    .butterfly-drift {
+      position: fixed;
+      pointer-events: none;
+      z-index: 4;
+      font-size: 1.5rem;
+      filter: drop-shadow(0 0 10px rgba(243, 201, 139, 0.7));
+      animation: butterflyFlight 22s linear infinite;
+    }
+
+    .butterfly-drift span {
+      display: inline-block;
+      animation: butterflyFlap 0.4s ease-in-out infinite alternate;
+    }
+
+    @keyframes butterflyFlap {
+      0%   { transform: scaleX(1) rotate(0deg); }
+      100% { transform: scaleX(0.4) rotate(15deg); }
+    }
+
+    @keyframes butterflyFlight {
+      0%   { transform: translate(-10vw, 85vh) rotate(15deg); opacity: 0; }
+      10%  { opacity: 0.9; }
+      50%  { transform: translate(50vw, 45vh) rotate(-10deg); }
+      90%  { opacity: 0.9; }
+      100% { transform: translate(110vw, 15vh) rotate(20deg); opacity: 0; }
+    }
+
+    /* ─── Falling Petals & Stardust ─── */
+    #petals-container, #stardust-container {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .portal-petal {
+      position: absolute;
+      top: -30px;
+      border-radius: 50% 0 50% 50%;
+      pointer-events: none;
+      animation: petalFall linear infinite;
+    }
+
+    @keyframes petalFall {
+      0%   { transform: translateY(-30px) rotate(0deg) scale(0.8); opacity: 0; }
+      10%  { opacity: 0.9; }
+      90%  { opacity: 0.9; }
+      100% { transform: translateY(105vh) rotate(640deg) scale(1.15); opacity: 0; }
+    }
+
+    .stardust-particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #f3c98b, 0 0 20px #e685a4;
+      animation: stardustDrift 8s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes stardustDrift {
+      0%   { transform: translateY(0) scale(0.5); opacity: 0.2; }
+      50%  { opacity: 0.95; transform: translateY(-35px) scale(1.3); }
+      100% { transform: translateY(-70px) scale(0.5); opacity: 0.2; }
+    }
+
+    /* ─── Floating Top Controls Bar (Music & Badge) ─── */
+    .portal-top-bar {
+      position: fixed;
+      top: 14px;
+      right: 20px;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .portal-music-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.5rem 1.15rem;
+      border-radius: 100px;
+      background: rgba(36, 19, 36, 0.75);
+      border: 1px solid rgba(243, 201, 139, 0.45);
+      color: #f3c98b;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .portal-music-pill:hover {
+      transform: translateY(-2px) scale(1.04);
+      background: rgba(230, 133, 164, 0.3);
+      border-color: #e685a4;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(230, 133, 164, 0.4);
+    }
+
+    .music-pill-equalizer {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 12px;
+    }
+
+    .music-pill-equalizer span {
+      width: 2.5px;
+      height: 4px;
+      background: #f3c98b;
+      border-radius: 2px;
+    }
+
+    .portal-music-pill.playing .music-pill-equalizer span:nth-child(1) { animation: pillEq 0.6s infinite alternate; }
+    .portal-music-pill.playing .music-pill-equalizer span:nth-child(2) { animation: pillEq 0.9s infinite alternate 0.2s; }
+    .portal-music-pill.playing .music-pill-equalizer span:nth-child(3) { animation: pillEq 0.7s infinite alternate 0.4s; }
+
+    @keyframes pillEq {
+      0%   { height: 3px; }
+      100% { height: 12px; }
+    }
+
+    /* ══════════════════════════════════════════════════════════════
+       3-COLUMN COMPOSITION CONTAINER
+       Fills the entire screen with breathtaking luxury balance
+       ══════════════════════════════════════════════════════════════ */
+    .portal-stage-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(1rem, 2.5vw, 2.8rem);
+      width: 100%;
+      max-width: 1400px;
+      padding: 1.5rem 1rem;
+      position: relative;
+      z-index: 10;
+      perspective: 1200px;
+    }
+
+    /* ─── SIDE CARDS (Left & Right) ─── */
+    .portal-side-card {
+      width: clamp(250px, 24vw, 325px);
+      padding: clamp(1.8rem, 2.2vw, 2.4rem) clamp(1.2rem, 1.6vw, 1.7rem);
+      border-radius: 34px;
+      background: var(--portal-card-bg);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid var(--portal-glass-border);
+      box-shadow: 
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        0 25px 60px rgba(10, 5, 18, 0.55),
+        0 0 35px rgba(230, 133, 164, 0.15);
+      text-align: center;
+      position: relative;
+      flex-shrink: 0;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+      will-change: transform;
+    }
+
+    .portal-side-card:hover {
+      box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.6),
+        0 30px 70px rgba(10, 5, 18, 0.65),
+        0 0 45px rgba(230, 133, 164, 0.3);
+    }
+
+    .portal-left-card {
+      animation: floatLeftCard 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatLeftCard {
+      0%   { transform: translateY(0) rotate(-1deg); }
+      100% { transform: translateY(-12px) rotate(0.8deg); }
+    }
+
+    .portal-right-card {
+      animation: floatRightCard 7.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatRightCard {
+      0%   { transform: translateY(0) rotate(1deg); }
+      100% { transform: translateY(-10px) rotate(-0.8deg); }
+    }
+
+    .side-card-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: fit-content;
+      max-width: 90%;
+      margin: 0 auto 1.3rem;
+      padding: 0.35rem 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(243, 201, 139, 0.4);
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #f3c98b;
+      box-shadow: 0 4px 15px rgba(243, 201, 139, 0.15);
+    }
+
+    .side-card-badge span {
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* ─── Left Card: 21st Birthday Welcome Sign Poster ─── */
+    .bday-poster-board {
+      position: relative;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.35rem 0.95rem 1.25rem;
+      box-shadow: 
+        0 14px 35px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.15);
+      text-align: center;
+      margin-top: 0.3rem;
+      transform: rotate(-1deg);
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+      box-sizing: border-box;
+    }
+
+    .bday-poster-board:hover {
+      transform: rotate(0deg) scale(1.03);
+      box-shadow: 
+        0 22px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(226, 115, 150, 0.3);
+    }
+
+    .poster-washi-tape {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(0.8deg);
+      width: 70px;
+      height: 18px;
+      background: rgba(248, 187, 208, 0.88);
+      border-left: 2px dashed rgba(226, 115, 150, 0.6);
+      border-right: 2px dashed rgba(226, 115, 150, 0.6);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 2;
+    }
+
+    .poster-flourish-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 2px;
+    }
+
+    .poster-flourish-wrap.poster-flourish-bottom {
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .flourish-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(80, 50, 70, 0.04), rgba(80, 50, 70, 0.38));
+    }
+
+    .flourish-line.reverse {
+      background: linear-gradient(90deg, rgba(80, 50, 70, 0.38), rgba(80, 50, 70, 0.04));
+    }
+
+    .poster-script-top {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.05rem;
+      color: #2e1a29;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .poster-sub-celebrating {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      color: #6d5465;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .poster-collage-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      filter: drop-shadow(0 4px 10px rgba(45, 15, 30, 0.12));
+    }
+
+    .poster-script-bottom {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.65rem;
+      color: #2e1a29;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .poster-title-main {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #241320;
+      text-transform: uppercase;
+      line-height: 1.35;
+      margin: 6px 0 4px;
+    }
+
+    .poster-date-line {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: #947a8a;
+      text-transform: uppercase;
+    }
+
+    /* Right Card: Birthday Queen Spotlight */
+    .side-crown-avatar {
+      position: relative;
+      width: 82px;
+      height: 82px;
+      margin: 0.8rem auto 1.2rem;
+    }
+
+    .side-crown-emoji {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      filter: drop-shadow(0 2px 10px rgba(243, 201, 139, 0.8));
+      animation: floatCrown 3s ease-in-out infinite;
+    }
+
+    @keyframes floatCrown {
+      0%, 100% { transform: translateX(-50%) translateY(0) rotate(-4deg); }
+      50%      { transform: translateX(-50%) translateY(-6px) rotate(4deg); }
+    }
+
+    .side-avatar-circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e685a4, #f3c98b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      box-shadow: 0 0 30px rgba(230, 133, 164, 0.55);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .side-queen-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .side-queen-sub {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.35rem;
+      color: #f3c98b;
+      margin-bottom: 1.3rem;
+    }
+
+    .side-note-box {
+      background: rgba(243, 201, 139, 0.12);
+      border-left: 3px solid #f3c98b;
+      border-radius: 0 16px 16px 0;
+      padding: 1.2rem;
+      text-align: left;
+      margin-bottom: 1.3rem;
+      position: relative;
+    }
+
+    .side-note-box::before {
+      content: '“';
+      position: absolute;
+      top: -6px;
+      right: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: rgba(243, 201, 139, 0.2);
+      line-height: 1;
+    }
+
+    .side-note-box p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.8rem;
+    }
+
+    .side-note-author {
+      text-align: right;
+    }
+
+    .side-note-author span {
+      display: block;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .side-note-author strong {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.45rem;
+      color: #f7a8b8;
+    }
+
+    .side-love-btn {
+      width: 100%;
+      padding: 0.75rem 1.2rem;
+      border-radius: 100px;
+      border: 1px solid rgba(230, 133, 164, 0.4);
+      background: linear-gradient(135deg, rgba(230, 133, 164, 0.25), rgba(243, 201, 139, 0.2));
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(230, 133, 164, 0.2);
+    }
+
+    .side-love-btn:hover {
+      background: linear-gradient(135deg, #e685a4, #bd5378);
+      border-color: #f3c98b;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(230, 133, 164, 0.5);
+    }
+
+    .side-love-btn:active {
+      transform: scale(0.97);
+    }
+
+    /* ══════════════════════════════════════════════════════════════
+       CENTER PORTAL LOCKBOX CARD
+       The star of the show
+       ══════════════════════════════════════════════════════════════ */
+    .portal-card-wrapper {
+      position: relative;
+      z-index: 20;
+      width: min(92vw, 470px);
+      padding: 2.5px;
+      border-radius: 38px;
+      background: linear-gradient(145deg, 
+        rgba(255, 255, 255, 0.55) 0%, 
+        rgba(243, 201, 139, 0.45) 30%, 
+        rgba(230, 133, 164, 0.55) 70%, 
+        rgba(216, 199, 255, 0.45) 100%
+      );
+      box-shadow: 
+        0 35px 90px rgba(10, 5, 20, 0.75), 
+        0 0 50px rgba(230, 133, 164, 0.3);
+      animation: floatPortal 6.5s ease-in-out infinite;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      flex-shrink: 0;
+    }
+
+    @keyframes floatPortal {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-10px); }
+    }
+
+    .portal-card {
+      background: rgba(30, 15, 30, 0.82);
+      backdrop-filter: blur(32px);
+      -webkit-backdrop-filter: blur(32px);
+      border-radius: 36px;
+      padding: clamp(2.5rem, 4vw, 3.2rem) clamp(1.6rem, 3vw, 2.4rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    /* Decorative Top Pill */
+    .portal-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: fit-content;
+      max-width: 90%;
+      margin: 0 auto 1.6rem;
+      padding: 0.45rem 1.4rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(243, 201, 139, 0.45);
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #f3c98b;
+      box-shadow: 0 4px 18px rgba(243, 201, 139, 0.2);
+    }
+
+    .portal-badge span {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Avatar Ring with Levitating Golden Crown */
+    .portal-avatar-stage {
+      position: relative;
+      width: fit-content;
+      margin: 0 auto 1.4rem;
+    }
+
+    .portal-crown-top {
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.2rem;
+      filter: drop-shadow(0 2px 10px rgba(243, 201, 139, 0.85));
+      animation: levitateCrown 3s ease-in-out infinite alternate;
+      z-index: 2;
+    }
+
+    @keyframes levitateCrown {
+      0%   { transform: translateX(-50%) translateY(0) rotate(-3deg); }
+      100% { transform: translateX(-50%) translateY(-6px) rotate(3deg); }
+    }
+
+    .portal-avatar-ring {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e685a4, #f3c98b, #d8c7ff);
+      padding: 3.5px;
+      box-shadow: 0 0 35px rgba(230, 133, 164, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: auraPulse 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes auraPulse {
+      0%   { box-shadow: 0 0 25px rgba(230, 133, 164, 0.5); }
+      100% { box-shadow: 0 0 45px rgba(243, 201, 139, 0.75), 0 0 20px rgba(230, 133, 164, 0.6); }
+    }
+
+    .portal-avatar-inner {
+      width: 100%;
+      height: 100%;
+      background: #251224;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+    }
+
+    /* Title with Shimmering Light Sweep */
+    .portal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.55rem);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      line-height: 1.2;
+      background: linear-gradient(90deg, #ffffff 0%, #ffd4e5 25%, #f9cf93 50%, #ffd4e5 75%, #ffffff 100%);
+      background-size: 200% auto;
+      animation: textShimmer 4.5s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes textShimmer {
+      to { background-position: 200% center; }
+    }
+
+    .portal-subtitle {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: #f3c98b;
+      margin-bottom: 0.85rem;
+      text-shadow: 0 2px 10px rgba(243, 201, 139, 0.3);
+    }
+
+    .portal-desc {
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+
+    /* ─── Jeweled Luxury PIN Letter Capsules ─── */
+    .pin-display-group {
+      display: flex;
+      justify-content: center;
+      gap: clamp(0.6rem, 1.8vw, 0.95rem);
+      margin-bottom: 1.7rem;
+    }
+
+    .pin-box {
+      width: clamp(54px, 14vw, 62px);
+      height: clamp(62px, 16vw, 70px);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #f3c98b;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 
+        inset 0 2px 4px rgba(255, 255, 255, 0.25),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3),
+        0 6px 18px rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+    }
+
+    .pin-box.active {
+      border-color: #f3c98b;
+      background: rgba(243, 201, 139, 0.18);
+      transform: translateY(-4px) scale(1.06);
+      box-shadow: 
+        inset 0 2px 6px rgba(255, 255, 255, 0.4),
+        0 10px 25px rgba(243, 201, 139, 0.4);
+      color: #fff;
+    }
+
+    .pin-box.filled {
+      border-color: #e685a4;
+      background: linear-gradient(135deg, rgba(230, 133, 164, 0.32), rgba(243, 201, 139, 0.2));
+      color: #ffffff;
+      transform: scale(1.03);
+      box-shadow: 
+        inset 0 2px 5px rgba(255, 255, 255, 0.45),
+        0 8px 25px rgba(230, 133, 164, 0.45);
+      animation: capsulePop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes capsulePop {
+      0%   { transform: scale(0.85); }
+      60%  { transform: scale(1.14); }
+      100% { transform: scale(1.03); }
+    }
+
+    /* Secret R · A · G · S Unlocked Glow Wave */
+    .pin-box.match-rags {
+      border-color: #f3c98b;
+      background: linear-gradient(135deg, rgba(243, 201, 139, 0.4), rgba(230, 133, 164, 0.4));
+      color: #fff;
+      box-shadow: 0 0 25px #f3c98b, 0 0 35px #e685a4;
+      animation: ragsWave 1.4s ease-in-out infinite alternate;
+    }
+
+    @keyframes ragsWave {
+      0%   { transform: translateY(0) scale(1.03); }
+      100% { transform: translateY(-5px) scale(1.08); filter: drop-shadow(0 0 10px #f3c98b); }
+    }
+
+    /* Hidden real input */
+    .hidden-password-input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+      pointer-events: auto;
+    }
+
+    /* ─── Luxury Unlock Liquid Glass Button ─── */
+    .portal-unlock-btn {
+      width: 100%;
+      padding: 1.1rem 2rem;
+      border: none;
+      border-radius: 100px;
+      background: linear-gradient(135deg, #e685a4 0%, #bd5378 45%, #f3c98b 100%);
+      background-size: 200% 200%;
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      box-shadow: 0 12px 35px rgba(230, 133, 164, 0.5);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portal-unlock-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+      transform: rotate(25deg) translateY(-100%);
+      transition: transform 0.75s ease;
+    }
+
+    .portal-unlock-btn:hover::before {
+      transform: rotate(25deg) translateY(100%);
+    }
+
+    .portal-unlock-btn:hover {
+      transform: translateY(-2.5px) scale(1.02);
+      box-shadow: 0 18px 45px rgba(230, 133, 164, 0.65);
+      background-position: right center;
+    }
+
+    .portal-unlock-btn:active {
+      transform: translateY(1px) scale(0.98);
+    }
+
+    .portal-unlock-btn.ready-pulse {
+      animation: readyPulse 1.8s infinite;
+    }
+
+    @keyframes readyPulse {
+      0%, 100% { box-shadow: 0 12px 35px rgba(230, 133, 164, 0.5); }
+      50%      { box-shadow: 0 16px 50px rgba(243, 201, 139, 0.8), 0 0 25px rgba(230, 133, 164, 0.8); transform: scale(1.02); }
+    }
+
+    /* Feedback */
+    .portal-feedback {
+      margin-top: 1.2rem;
+      min-height: 1.6rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .portal-feedback.success {
+      color: #92e6a7;
+      text-shadow: 0 0 12px rgba(146, 230, 167, 0.6);
+    }
+
+    .portal-feedback.error {
+      color: #ff8597;
+      text-shadow: 0 0 12px rgba(255, 133, 151, 0.6);
+      animation: shakeFeedback 0.4s ease;
+    }
+
+    @keyframes shakeFeedback {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    /* Screen Exit / Opening Transition */
+    .portal-opening {
+      animation: openPortal 1.25s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    }
+
+    @keyframes openPortal {
+      0%   { transform: scale(1); opacity: 1; }
+      40%  { transform: scale(1.08) translateY(-10px); opacity: 1; filter: brightness(1.25); }
+      100% { transform: scale(2.6); opacity: 0; filter: blur(25px); }
+    }
+
+    /* ══════════════════════════════════════════════════════════════
+       RESPONSIVE ADAPTATIONS
+       Guarantees zero empty space on every screen size!
+       ══════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      body.portal-body {
+        padding-top: 5rem;
+        justify-content: flex-start;
+      }
+      .portal-stage-container {
+        flex-direction: column;
+        gap: 1.8rem;
+      }
+      .portal-card-wrapper {
+        order: 1;
+        width: min(94vw, 460px);
+      }
+      .portal-side-card {
+        width: min(94vw, 460px);
+        animation: none;
+      }
+      .portal-left-card { order: 2; }
+      .portal-right-card { order: 3; }
+    }
+
+    @media (max-width: 480px) {
+      .fairy-lights-garland { height: 38px; }
+      .fairy-bulb { width: 11px; height: 18px; margin-top: 6px; }
+      .portal-card { padding: 2.2rem 1.3rem; }
+      .pin-box { width: 50px; height: 58px; font-size: 1.6rem; border-radius: 16px; }
+      .portal-title { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body class="portal-body">
+
+  <!-- ─── Hanging Fairy Lights Garland Across Top ─── -->
+  <aside class="fairy-lights-garland" aria-hidden="true">
+    <div class="fairy-bulb b-gold"></div>
+    <div class="fairy-bulb b-rose"></div>
+    <div class="fairy-bulb b-mint"></div>
+    <div class="fairy-bulb b-violet"></div>
+    <div class="fairy-bulb b-gold"></div>
+    <div class="fairy-bulb b-rose"></div>
+    <div class="fairy-bulb b-mint"></div>
+    <div class="fairy-bulb b-violet"></div>
+    <div class="fairy-bulb b-gold"></div>
+    <div class="fairy-bulb b-rose"></div>
+    <div class="fairy-bulb b-mint"></div>
+    <div class="fairy-bulb b-violet"></div>
+    <div class="fairy-bulb b-gold"></div>
+    <div class="fairy-bulb b-rose"></div>
+  </aside>
+
+  <!-- ─── Floating Top Control Bar ─── -->
+  <header class="portal-top-bar">
+    <button class="portal-music-pill" id="portal-music-toggle" type="button" aria-label="Toggle background music">
+      <span class="music-pill-icon">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+      </span>
+      <span id="portal-music-txt">Play Song</span>
+      <div class="music-pill-equalizer" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+  </header>
+
+  <!-- Ambient Audio Track -->
+  <audio id="portal-bg-audio" src="assets/audio/Azhiyaadha_Oviyam.mp3" preload="auto">
+    <source src="assets/audio/Azhiyaadha_Oviyam.mp3" type="audio/mpeg" />
+    <source src="assets/audio/special_song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Ambient Ethereal Layers -->
+  <div class="aurora-bg" aria-hidden="true"></div>
+  <div class="bokeh-sphere bokeh-1" aria-hidden="true"></div>
+  <div class="bokeh-sphere bokeh-2" aria-hidden="true"></div>
+  <div class="bokeh-sphere bokeh-3" aria-hidden="true"></div>
+  <div id="petals-container" aria-hidden="true"></div>
+  <div id="stardust-container" aria-hidden="true"></div>
+
+  <!-- Animated Flying Butterflies -->
+  <div class="butterfly-drift" style="animation-delay: 1s;" aria-hidden="true">
+    <span>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="#ffd166">
+        <path d="M12 4c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1s-1-.4-1-1V5c0-.6.4-1 1-1zm-2 2c-3 0-5.5 2-6 5-.3 1.8.4 3.7 1.8 4.8.8.7 1.4 1.7 1.7 2.7.2.5.6.8 1.1.8.8 0 1.4-.7 1.4-1.5V6zm4 0v13.8c0 .8.6 1.5 1.4 1.5.5 0 .9-.3 1.1-.8.3-1 .9-2 1.7-2.7 1.4-1.1 2.1-3 1.8-4.8-.5-3-3-5-6-5z"/>
+      </svg>
+    </span>
+  </div>
+  <div class="butterfly-drift" style="animation-delay: 12s; top: 30%;" aria-hidden="true">
+    <span>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="#ffd166">
+        <path d="M12 4c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1s-1-.4-1-1V5c0-.6.4-1 1-1zm-2 2c-3 0-5.5 2-6 5-.3 1.8.4 3.7 1.8 4.8.8.7 1.4 1.7 1.7 2.7.2.5.6.8 1.1.8.8 0 1.4-.7 1.4-1.5V6zm4 0v13.8c0 .8.6 1.5 1.4 1.5.5 0 .9-.3 1.1-.8.3-1 .9-2 1.7-2.7 1.4-1.1 2.1-3 1.8-4.8-.5-3-3-5-6-5z"/>
+      </svg>
+    </span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       3-COLUMN BALANCED STAGE
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="portal-stage-container" id="portal-stage">
+
+    <!-- ─── LEFT: 21st Happy Birthday Celebration Card ─── -->
+    <aside class="portal-side-card portal-left-card" id="card-left" aria-label="21st Happy Birthday Celebration">
+      <div class="side-card-badge">
+        <span>21ST HAPPY BIRTHDAY</span>
+      </div>
+      
+            <div class="bday-poster-board" id="bday-poster-board" aria-label="21st Birthday Welcome Sign for Ragsss">
+        <div class="poster-washi-tape" aria-hidden="true"></div>
+
+        <div class="poster-flourish-wrap">
+          <div class="flourish-line"></div>
+          <span class="poster-script-top">look who's</span>
+          <div class="flourish-line reverse"></div>
+        </div>
+
+        <div class="poster-sub-celebrating">CELEBRATING</div>
+
+        <svg class="poster-collage-svg" viewBox="0 0 300 240" width="100%" height="auto" aria-label="21 Photo Collage for Ragsss">
+          <defs>
+            <clipPath id="bday-21-clip">
+              <text x="85" y="195" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="220">2</text>
+              <text x="205" y="195" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="220">1</text>
+            </clipPath>
+          </defs>
+          <rect x="0" y="0" width="300" height="240" fill="#ffffff" clip-path="url(#bday-21-clip)" />
+          <g clip-path="url(#bday-21-clip)">
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.49%20AM%20(1).jpeg" x="1.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.49%20AM.jpeg" x="51.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.50%20AM%20(1).jpeg" x="101.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.50%20AM%20(2).jpeg" x="151.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.50%20AM.jpeg" x="201.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.51%20AM%20(1).jpeg" x="251.2" y="1.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.51%20AM.jpeg" x="1.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.54%20AM.jpeg" x="51.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.55%20AM%20(1).jpeg" x="101.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.55%20AM%20(2).jpeg" x="151.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.55%20AM.jpeg" x="201.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.56%20AM.jpeg" x="251.2" y="49.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.57%20AM%20(1).jpeg" x="1.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.57%20AM%20(2).jpeg" x="51.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.57%20AM.jpeg" x="101.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.58%20AM%20(1).jpeg" x="151.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.58%20AM.jpeg" x="201.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.59%20AM%20(1).jpeg" x="251.2" y="97.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.59%20AM%20(2).jpeg" x="1.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.59%20AM.jpeg" x="51.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.44.00%20AM%20(1).jpeg" x="101.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.44.00%20AM.jpeg" x="151.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.44.01%20AM%20(1).jpeg" x="201.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.44.01%20AM.jpeg" x="251.2" y="145.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.48.17%20AM.jpeg" x="1.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.48.18%20AM.jpeg" x="51.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.49%20AM%20(1).jpeg" x="101.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.49%20AM.jpeg" x="151.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.50%20AM%20(1).jpeg" x="201.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+            <image href="assets/images/gallery/WhatsApp%20Image%202026-11-22%20at%209.43.50%20AM%20(2).jpeg" x="251.2" y="193.2" width="47.6" height="45.6" preserveAspectRatio="xMidYMid slice" />
+          </g>
+        </svg>
+
+        <div class="poster-flourish-wrap poster-flourish-bottom">
+          <div class="flourish-line"></div>
+          <span class="poster-script-bottom">welcome to</span>
+          <div class="flourish-line reverse"></div>
+        </div>
+
+        <div class="poster-title-main">RAGSSS'S 21ST BIRTHDAY</div>
+        <div class="poster-date-line">28 NOVEMBER 2026</div>
+      </div>
+    </aside>
+
+    <!-- ─── CENTER: The Surprise Lockbox Portal ─── -->
+    <main class="portal-card-wrapper" id="portal-wrapper">
+      <div class="portal-card">
+        
+        <div class="portal-badge">
+          <span>MY EVERYTHING</span>
+        </div>
+
+        <div class="portal-avatar-stage">
+          <div class="portal-crown-top" aria-hidden="true">
+            <svg viewBox="0 0 38 22" width="36" height="21" fill="none">
+              <path d="M5 18h28v2H5z" fill="#f3c98b"/>
+              <path d="M7 17l4-12 8 8 8-8 4 12H7z" fill="url(#crownGoldCenter)"/>
+              <circle cx="11" cy="5" r="2" fill="#ffd166"/>
+              <circle cx="19" cy="13" r="2" fill="#ffd166"/>
+              <circle cx="27" cy="5" r="2" fill="#ffd166"/>
+              <defs>
+                <linearGradient id="crownGoldCenter" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#fce2aa"/>
+                  <stop offset="50%" stop-color="#e685a4"/>
+                  <stop offset="100%" stop-color="#dfa95c"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="portal-avatar-ring">
+            <div class="portal-avatar-inner">
+              <span class="avatar-monogram">R</span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="portal-title">Ragsss's Little World</h1>
+        <p class="portal-subtitle">A special birthday surprise for you</p>
+        <p class="portal-desc">
+          Hii Ragsss! Every page, letter, song, and memory here was created with lots of love, just to make you smile today.
+        </p>
+
+        <!-- 4-Digit PIN Lock Display -->
+        <form id="login-form" autocomplete="off">
+          <label for="password" class="visually-hidden">Enter 4-digit secret key</label>
+          <input 
+            type="tel" 
+            id="password" 
+            name="password" 
+            maxlength="4" 
+            class="hidden-password-input" 
+            autocomplete="off" 
+            autofocus 
+            required 
+          />
+
+          <div class="pin-display-group" id="pin-display" role="button" tabindex="0" aria-label="Click to enter 4-digit key">
+            <div class="pin-box active" data-index="0">•</div>
+            <div class="pin-box" data-index="1">•</div>
+            <div class="pin-box" data-index="2">•</div>
+            <div class="pin-box" data-index="3">•</div>
+          </div>
+
+          <button type="submit" class="portal-unlock-btn" id="login-btn">
+            <span>Open My Surprise</span>
+          </button>
+        </form>
+
+        <div class="portal-feedback" id="login-feedback" aria-live="polite"></div>
+      </div>
+    </main>
+
+    <!-- ─── RIGHT: Birthday Queen Spotlight ─── -->
+    <aside class="portal-side-card portal-right-card" id="card-right" aria-label="Birthday Queen Spotlight">
+      <div class="side-card-badge">
+        <span>SPECIAL SPOTLIGHT</span>
+      </div>
+
+      <div class="side-crown-avatar">
+        <div class="side-crown-emoji" aria-hidden="true">
+          <svg viewBox="0 0 38 22" width="34" height="20" fill="none">
+            <path d="M5 18h28v2H5z" fill="#f3c98b"/>
+            <path d="M7 17l4-12 8 8 8-8 4 12H7z" fill="url(#crownGoldRight)"/>
+            <circle cx="11" cy="5" r="2" fill="#ffd166"/>
+            <circle cx="19" cy="13" r="2" fill="#ffd166"/>
+            <circle cx="27" cy="5" r="2" fill="#ffd166"/>
+            <defs>
+              <linearGradient id="crownGoldRight" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fce2aa"/>
+                <stop offset="50%" stop-color="#e685a4"/>
+                <stop offset="100%" stop-color="#dfa95c"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="side-avatar-circle">
+          <span class="avatar-monogram">R</span>
+        </div>
+      </div>
+
+      <h3 class="side-queen-title">Birthday Queen Ragsss</h3>
+      <p class="side-queen-sub">The kindest soul & brightest smile</p>
+
+      <div class="side-note-box">
+        <p>
+          "Today every little corner of this world is made to celebrate you — your kindness, your laughter, and the warmth you bring."
+        </p>
+        <div class="side-note-author">
+          <span>Always yours,</span>
+          <strong>Gokul ♡</strong>
+        </div>
+      </div>
+
+      <button type="button" class="side-love-btn" id="send-love-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span>Send Birthday Love</span>
+      </button>
+    </aside>
+
+  </div>
+
+  <!-- ─── Scripts ─── -->
+  <script>
+    // ─── 1. Generate Floating Flower Petals ───
+    (function createPetals() {
+      const container = document.getElementById('petals-container');
+      const colors = ['#f7d2e0', '#e685a4', '#d8c7ff', '#f3c98b', '#ffdbe6', '#fcd2da'];
+      const petalCount = 22;
+
+      for (let i = 0; i < petalCount; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'portal-petal';
+        const size = 12 + Math.random() * 16;
+        petal.style.width = size + 'px';
+        petal.style.height = (size * 1.35) + 'px';
+        petal.style.left = (Math.random() * 100) + 'vw';
+        petal.style.background = colors[Math.floor(Math.random() * colors.length)];
+        petal.style.animationDuration = (8 + Math.random() * 9) + 's';
+        petal.style.animationDelay = (Math.random() * 10) + 's';
+        petal.style.opacity = 0.35 + Math.random() * 0.55;
+        petal.style.filter = 'blur(' + (Math.random() * 1.2) + 'px)';
+        container.appendChild(petal);
+      }
+    })();
+
+    // ─── 2. Generate Floating Stardust Particles ───
+    (function createStardust() {
+      const container = document.getElementById('stardust-container');
+      for (let i = 0; i < 28; i++) {
+        const star = document.createElement('div');
+        star.className = 'stardust-particle';
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 100 + 'vh';
+        star.style.animationDuration = (5 + Math.random() * 6) + 's';
+        star.style.animationDelay = (Math.random() * 5) + 's';
+        container.appendChild(star);
+      }
+    })();
+
+    // ─── 3. Background Ambient Music Player ───
+    const bgAudio = document.getElementById('portal-bg-audio');
+    const musicBtn = document.getElementById('portal-music-toggle');
+    const musicTxt = document.getElementById('portal-music-txt');
+    let isPortalAudioBusy = false;
+
+    async function playAudioSafe() {
+      if (!bgAudio || isPortalAudioBusy) return;
+      if (!bgAudio.paused) return;
+
+      isPortalAudioBusy = true;
+      try {
+        bgAudio.muted = false;
+        bgAudio.volume = 1.0;
+        await bgAudio.play();
+        if (musicBtn) musicBtn.classList.add('playing');
+        if (musicTxt) musicTxt.textContent = 'Playing';
+        try { sessionStorage.setItem('musicPlaying', 'true'); } catch (e) {}
+      } catch (err) {
+        console.warn('Playback deferred until user interaction:', err);
+        if (musicTxt) musicTxt.textContent = 'Tap to play';
+      } finally {
+        isPortalAudioBusy = false;
+      }
+    }
+
+    function togglePortalMusic(e) {
+      if (e) e.stopPropagation();
+      if (!bgAudio) return;
+      if (bgAudio.paused) {
+        playAudioSafe();
+      } else {
+        bgAudio.pause();
+        if (musicBtn) musicBtn.classList.remove('playing');
+        if (musicTxt) musicTxt.textContent = 'Play Song';
+        try { sessionStorage.setItem('musicPlaying', 'false'); } catch (e) {}
+      }
+    }
+
+    if (musicBtn) {
+      musicBtn.addEventListener('click', togglePortalMusic);
+    }
+
+    if (bgAudio) {
+      bgAudio.loop = false;
+      bgAudio.addEventListener('ended', () => {
+        bgAudio.pause();
+        bgAudio.currentTime = 0;
+        if (musicBtn) musicBtn.classList.remove('playing');
+        if (musicTxt) musicTxt.textContent = 'Play Song';
+        try { sessionStorage.setItem('musicPlaying', 'false'); } catch (e) {}
+      });
+    }
+
+    // ─── 4. Interactive PIN Input Experience ───
+    const passwordInput = document.getElementById('password');
+    const pinDisplay = document.getElementById('pin-display');
+    const pinBoxes = document.querySelectorAll('.pin-box');
+    const loginForm = document.getElementById('login-form');
+    const loginBtn = document.getElementById('login-btn');
+    const feedback = document.getElementById('login-feedback');
+    const portalWrapper = document.getElementById('portal-wrapper');
+
+    const correctPassword = '2811';
+
+    // Position-based digit to letter mapping:
+    // ONLY entering 2811 will spell R · A · G · S!
+    // Typing any other number produces completely different letters!
+    const digitToLetterRules = [
+      { '2': 'R', '0': 'P', '1': 'K', '3': 'M', '4': 'B', '5': 'D', '6': 'H', '7': 'T', '8': 'V', '9': 'Y' }, // Slot 0: 2 -> R
+      { '8': 'A', '0': 'O', '1': 'I', '2': 'E', '3': 'U', '4': 'Q', '5': 'N', '6': 'C', '7': 'F', '9': 'L' }, // Slot 1: 8 -> A
+      { '1': 'G', '0': 'Z', '2': 'T', '3': 'J', '4': 'W', '5': 'P', '6': 'B', '7': 'X', '8': 'M', '9': 'V' }, // Slot 2: 1 -> G
+      { '1': 'S', '0': 'L', '2': 'R', '3': 'D', '4': 'N', '5': 'K', '6': 'Y', '7': 'P', '8': 'T', '9': 'H' }  // Slot 3: 1 -> S
+    ];
+
+    pinDisplay.addEventListener('click', () => passwordInput.focus());
+    passwordInput.focus();
+
+    // Soft Web Audio API Tone Feedback
+    function playPortalTone(freq, type = 'sine', duration = 0.15) {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        gain.gain.setValueAtTime(0.04, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + duration);
+      } catch (err) {}
+    }
+
+    function updatePinBoxes() {
+      const val = passwordInput.value;
+      const len = val.length;
+
+      if (len > 0) {
+        playPortalTone(480 + len * 95, 'sine', 0.12);
+      }
+
+      pinBoxes.forEach((box, i) => {
+        if (i < len) {
+          const digit = val[i];
+          const letter = (digitToLetterRules[i] && digitToLetterRules[i][digit]) ? digitToLetterRules[i][digit] : digit;
+          box.textContent = letter;
+          box.classList.add('filled');
+          box.classList.remove('active');
+        } else if (i === len) {
+          box.textContent = '•';
+          box.classList.remove('filled', 'match-rags');
+          box.classList.add('active');
+        } else {
+          box.textContent = '•';
+          box.classList.remove('filled', 'active', 'match-rags');
+        }
+      });
+
+      if (val === '2811') {
+        pinBoxes.forEach(b => b.classList.add('match-rags'));
+        feedback.textContent = 'R · A · G · S Unlocked · Step Into Your Wonderland';
+        feedback.className = 'portal-feedback success';
+        loginBtn.classList.add('ready-pulse');
+        [659, 830, 988, 1318].forEach((f, i) => setTimeout(() => playPortalTone(f, 'triangle', 0.35), i * 85));
+      } else {
+        pinBoxes.forEach(b => b.classList.remove('match-rags'));
+        loginBtn.classList.remove('ready-pulse');
+        feedback.textContent = '';
+        feedback.className = 'portal-feedback';
+      }
+    }
+
+    passwordInput.addEventListener('input', updatePinBoxes);
+
+    // Submit Validation & Transition to home.html
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const entered = passwordInput.value.trim();
+
+      if (entered === correctPassword) {
+        feedback.textContent = 'Welcome to your little world, Ragsss!';
+        feedback.className = 'portal-feedback success';
+        portalWrapper.classList.add('portal-opening');
+
+        setTimeout(() => {
+          window.location.href = 'pages/home.html';
+        }, 1150);
+      } else {
+        feedback.textContent = 'Incorrect key. Try again, Ragsss';
+        feedback.className = 'portal-feedback error';
+        passwordInput.value = '';
+        updatePinBoxes();
+        passwordInput.focus();
+      }
+    });
+
+    // ─── 5. "Send Birthday Love" Celebration Button on Right Card ───
+    const sendLoveBtn = document.getElementById('send-love-btn');
+    if (sendLoveBtn) {
+      sendLoveBtn.addEventListener('click', () => {
+        playPortalTone(784, 'triangle', 0.2);
+        setTimeout(() => playPortalTone(988, 'triangle', 0.25), 100);
+        setTimeout(() => playPortalTone(1318, 'triangle', 0.4), 220);
+
+        for (let i = 0; i < 20; i++) {
+          const heart = document.createElement('span');
+          heart.className = 'fairy-dust-spark';
+          heart.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="' + (i % 2 === 0 ? '#e685a4' : '#f3c98b') + '"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+          heart.style.left = (window.innerWidth * 0.5 + (Math.random() - 0.5) * 450) + 'px';
+          heart.style.top = (window.innerHeight * 0.5 + (Math.random() - 0.5) * 350) + 'px';
+          heart.style.setProperty('--tx', ((Math.random() - 0.5) * 220) + 'px');
+          heart.style.setProperty('--ty', (-100 - Math.random() * 180) + 'px');
+          document.body.appendChild(heart);
+          setTimeout(() => heart.remove(), 1200);
+        }
+
+        const originalText = sendLoveBtn.innerHTML;
+        sendLoveBtn.innerHTML = '<span>Sent to Ragsss!</span>';
+        setTimeout(() => {
+          sendLoveBtn.innerHTML = originalText;
+        }, 2200);
+      });
+    }
+
+    // ─── 6. Interactive 3D Parallax Tilt for Desktop ───
+    (function init3dParallax() {
+      if (window.innerWidth < 900) return;
+      const stage = document.getElementById('portal-stage');
+      const cards = [document.getElementById('card-left'), portalWrapper, document.getElementById('card-right')].filter(Boolean);
+
+      window.addEventListener('mousemove', (e) => {
+        const cx = window.innerWidth / 2;
+        const cy = window.innerHeight / 2;
+        const dx = (e.clientX - cx) / cx;
+        const dy = (e.clientY - cy) / cy;
+
+        cards.forEach((card, idx) => {
+          const depth = (idx === 1) ? 8 : 14;
+          const rx = -dy * depth;
+          const ry = dx * depth;
+          card.style.transform = `perspective(1000px) rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg)`;
+        });
+      }, { passive: true });
+
+      window.addEventListener('mouseleave', () => {
+        cards.forEach(card => card.style.transform = '');
+      });
+    })();
+
+    // ─── 7. Fairy Dust Sparkling Cursor Trail ───
+    (function initPortalCursor() {
+      const sparks = ['✦', '★', '•', '·'];
+      let last = 0;
+      function spawn(x, y) {
+        const now = Date.now();
+        if (now - last < 40) return;
+        last = now;
+        const s = document.createElement('span');
+        s.className = 'fairy-dust-spark';
+        s.textContent = sparks[Math.floor(Math.random() * sparks.length)];
+        s.style.color = '#f3c98b';
+        s.style.left = x + 'px';
+        s.style.top = y + 'px';
+        const ox = (Math.random() - 0.5) * 35;
+        const oy = -20 - Math.random() * 35;
+        s.style.setProperty('--tx', ox + 'px');
+        s.style.setProperty('--ty', oy + 'px');
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 750);
+      }
+      window.addEventListener('mousemove', e => spawn(e.clientX, e.clientY), { passive: true });
+      window.addEventListener('touchmove', e => { if (e.touches && e.touches[0]) spawn(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

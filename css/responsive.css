@@ -1,0 +1,33 @@
+/* css/responsive.css */
+/* Responsive breakpoints for Enchanted Pastel Garden website */
+
+/* Mobile first (default) */
+body {
+  font-size: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .site-title {
+    font-size: 3rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .site-title {
+    font-size: 4rem;
+  }
+  .nav-bar ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+/* Reduce motion already handled in other CSS */

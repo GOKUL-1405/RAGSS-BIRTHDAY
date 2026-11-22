@@ -1,0 +1,19 @@
+{
+  "photos": [
+    {"id": "g1", "filename": "placeholder1.png", "caption": "Photo 1 caption", "date": ""},
+    {"id": "g2", "filename": "placeholder2.png", "caption": "Photo 2 caption", "date": ""},
+    {"id": "g3", "filename": "placeholder3.png", "caption": "Photo 3 caption", "date": ""},
+    {"id": "g4", "filename": "placeholder4.png", "caption": "Photo 4 caption", "date": ""},
+    {"id": "g5", "filename": "placeholder5.png", "caption": "Photo 5 caption", "date": ""},
+    {"id": "g6", "filename": "placeholder6.png", "caption": "Photo 6 caption", "date": ""},
+    {"id": "g7", "filename": "placeholder7.png", "caption": "Photo 7 caption", "date": ""},
+    {"id": "g8", "filename": "placeholder8.png", "caption": "Photo 8 caption", "date": ""},
+    {"id": "g9", "filename": "placeholder9.png", "caption": "Photo 9 caption", "date": ""},
+    {"id": "g10", "filename": "placeholder10.png", "caption": "Photo 10 caption", "date": ""},
+    {"id": "g11", "filename": "placeholder11.png", "caption": "Photo 11 caption", "date": ""},
+    {"id": "g12", "filename": "placeholder12.png", "caption": "Photo 12 caption", "date": ""},
+    {"id": "g13", "filename": "placeholder13.png", "caption": "Photo 13 caption", "date": ""},
+    {"id": "g14", "filename": "placeholder14.png", "caption": "Photo 14 caption", "date": ""},
+    {"id": "g15", "filename": "placeholder15.png", "caption": "Photo 15 caption", "date": ""}
+  ]
+}

@@ -1,0 +1,10 @@
+# Local Scratch & Diagnostics
+scratch/
+.gemini/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

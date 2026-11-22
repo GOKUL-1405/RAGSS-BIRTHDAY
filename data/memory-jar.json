@@ -1,0 +1,11 @@
+{
+  "memories": [
+    {"id": "mem1", "title": "First conversation", "date": "May 7, 2026, 7:30 AM", "caption": "Our first chat over morning coffee.", "image": "placeholder1.png"},
+    {"id": "mem2", "title": "First café outing", "date": "July 31, 2026, 10:45 AM", "caption": "Bread omelette and juice together.", "image": "placeholder2.png"},
+    {"id": "mem3", "title": "KitKat gift", "date": "August 7, 2026", "caption": "You gave me a KitKat.", "image": "placeholder3.png"},
+    {"id": "mem4", "title": "Murugan statue", "date": "September 1, 2026", "caption": "First gift you gave me.", "image": "placeholder4.png"},
+    {"id": "mem5", "title": "Yellow dress", "date": "September 21, 2026", "caption": "Saw you in a yellow dress.", "image": "placeholder5.png"},
+    {"id": "mem6", "title": "Advance birthday wish", "date": "October 13, 2026 night", "caption": "Precious moments before the big day.", "image": "placeholder6.png"},
+    {"id": "mem7", "title": "First birthday wish", "date": "October 14, 2026, 12:00 AM", "caption": "Voice recording and call.", "image": "placeholder7.png"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "stages": [
+    {"id": "stage1", "label": "CLASS MATE", "date": "May 7, 2026"},
+    {"id": "stage2", "label": "FRIEND", "date": "July 31, 2026"},
+    {"id": "stage3", "label": "BEST FRIEND", "date": "August 15, 2026"},
+    {"id": "stage4", "label": "CLOSE FRIEND", "date": "September 21, 2026"},
+    {"id": "stage5", "label": "FAVORITE PERSON", "date": "October 13, 2026"},
+    {"id": "stage6", "label": "MY EVERYTHING", "date": "October 14, 2026"}
+  ]
+}
