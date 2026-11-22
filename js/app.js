@@ -281,7 +281,7 @@ if (letterKeyForm && letterKeyInput) {
     e.preventDefault();
     const entered = letterKeyInput.value.trim().toLowerCase();
 
-    if (entered === 'rags') {
+    if (entered === 'rags' || entered === 'ragss' || entered === 'ragsss') {
       if (letterContent && typeof window.personalLetterContent === 'string') {
         letterContent.textContent = window.personalLetterContent;
       }
