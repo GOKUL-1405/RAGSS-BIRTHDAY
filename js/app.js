@@ -1111,7 +1111,7 @@ const botKnowledge = {
   'memories': "Our memories are pure gold! From our first chat on May 7th to the café breakfast and KitKat day, every second with you is precious!",
   'journey': "We started as classmates, became friends, best friends, close friends, favorite persons, and now you are Gokul's everything!",
   'kitkat': "August 7th! You gave Gokul a KitKat. It was a small treat, but it made him the happiest person alive!",
-  'café': "July 31st at 10:45 AM! Sharing bread omelette and fresh juice together — first café outing was unforgettable!",
+  'café': "July 28th at 10:45 AM! Sharing bread omelette and fresh juice together — first café outing was unforgettable!",
   'yellow': "September 21st! You wore that stunning yellow dress and looked absolutely breathtaking!",
   'birthday': "HAPPY BIRTHDAY RAGSSS! May all your dreams come true, may your heart always be peaceful, and may you smile endlessly!",
   'murugan': "On August 15, Gokul did 108 rounds around Murugan temple praying for your happiness. And on Sept 1, you gave him that sacred Murugan statue!",

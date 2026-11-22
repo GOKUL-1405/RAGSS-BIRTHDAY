@@ -21,14 +21,14 @@ window.celestialDates = [
   {
     id: 2,
     name: "Beta Star · Morning Café",
-    date: "July 31, 2026 · 10:45 AM",
+    date: "July 28, 2026 · 10:45 AM",
     x: 26,
     y: 35,
     magnitude: 1.0,
     color: "#f7bed0",
     title: "First Breakfast Together",
     subtitle: "Bread Omelette & Unhurried Conversations",
-    story: "July 31st at 10:45 AM. Sitting across from you, sharing bread omelette and fresh juice. That morning showed me how effortless and peaceful being in your presence feels. Minutes vanished like seconds, and every smile from you lit up the whole room.",
+    story: "July 28th at 10:45 AM. Sitting across from you, sharing bread omelette and fresh juice. That morning showed me how effortless and peaceful being in your presence feels. Minutes vanished like seconds, and every smile from you lit up the whole room.",
     quote: "The simplest moments become timeless treasures when shared with you.",
     symbol: "♡"
   },

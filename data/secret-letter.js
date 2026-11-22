@@ -4,7 +4,7 @@ May 7, 2026, morning 7:30 AM — namma first time pesa aarambicha moment. Andha 
 
 July 27, 2026, 9:34 PM — unakkaaga first time story and notes share pannina moment. Adhu enakku oru special beginning.
 
-July 31, 2026, morning 10:45 AM — namma first café outing! Bread omelette and juice share pannina andha moment, andha naal un kooda irundhadhula oru different happiness irundhuchu. Adhe day, Nagercoil-la train yerumbodhu, nee afternoon saapdala-nu therinju, unakku Bourbon biscuit and Snickers vaangi kuduthen. Adhu enakku first time unakku snacks vaangi kudutha moment.
+July 28, 2026, morning 10:45 AM — namma first café outing! Bread omelette and juice share pannina andha moment, andha naal un kooda irundhadhula oru different happiness irundhuchu. Adhe day, Nagercoil-la train yerumbodhu, nee afternoon saapdala-nu therinju, unakku Bourbon biscuit and Snickers vaangi kuduthen. Adhu enakku first time unakku snacks vaangi kudutha moment.
 
 August 7 — nee enakku KitKat vaangi kudutha. Chinna chocolate dhaan, aana adhu kudutha happiness romba special.
 
