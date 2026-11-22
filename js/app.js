@@ -113,39 +113,42 @@ if (overlay) {
   });
 }
 
-// ─── 2. Floating Petals Animation ───
+// ─── 2. Floating Petals Animation (High Performance) ───
 (function createFloatingPetals() {
   const container = document.getElementById('petals-container');
   if (!container) return;
 
-  const colors = ['#f7d2e0', '#e27396', '#d8c7ff', '#f3c98b', '#ffd8be', '#ffdbe6'];
-  const petalCount = 18;
+  const isMobile = window.innerWidth <= 768;
+  const petalCount = isMobile ? 5 : 8; // Lightweight count prevents GPU memory pressure
+  const colors = ['#f7d2e0', '#e27396', '#d8c7ff', '#f3c98b', '#ffd8be'];
 
   for (let i = 0; i < petalCount; i++) {
     const petal = document.createElement('div');
     petal.className = 'petal';
-    const size = 10 + Math.random() * 16;
+    const size = 10 + Math.random() * 12;
     petal.style.width = size + 'px';
     petal.style.height = (size * 1.35) + 'px';
     petal.style.left = (Math.random() * 100) + 'vw';
     petal.style.background = colors[Math.floor(Math.random() * colors.length)];
-    petal.style.animationDuration = (8 + Math.random() * 10) + 's';
-    petal.style.animationDelay = (Math.random() * 10) + 's';
-    petal.style.opacity = 0.25 + Math.random() * 0.45;
+    petal.style.animationDuration = (11 + Math.random() * 9) + 's';
+    petal.style.animationDelay = (Math.random() * 7) + 's';
+    petal.style.opacity = 0.22 + Math.random() * 0.28;
     container.appendChild(petal);
   }
 })();
 
-// ─── 2.5 Generate Floating Stardust ───
+// ─── 2.5 Generate Floating Stardust (Lightweight) ───
 (function createFloatingStardust() {
   const container = document.getElementById('stardust-container');
   if (!container) return;
-  for (let i = 0; i < 26; i++) {
+  const isMobile = window.innerWidth <= 768;
+  const starCount = isMobile ? 6 : 10;
+  for (let i = 0; i < starCount; i++) {
     const star = document.createElement('div');
     star.className = 'stardust-particle';
     star.style.left = Math.random() * 100 + 'vw';
     star.style.top = Math.random() * 100 + 'vh';
-    star.style.animationDuration = (5 + Math.random() * 6) + 's';
+    star.style.animationDuration = (6 + Math.random() * 6) + 's';
     star.style.animationDelay = (Math.random() * 5) + 's';
     container.appendChild(star);
   }
@@ -1286,38 +1289,42 @@ if (window.location.hash) {
   navigateTo(hash);
 }
 
-// ─── 19. Fairy Dust Sparkling Cursor Trail ───
+// ─── 19. Fairy Dust Sparkling Cursor Trail (Silky 60fps & Battery-Friendly) ───
 (function initCursorMagic() {
+  // Disable completely on touch devices / phones: touch screens have no cursor and touchmove degrades scrolling
+  const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.innerWidth <= 768);
+  if (isTouchDevice) return;
+
   const sparkSymbols = ['✦', '★', '•', '·', '✧'];
   let lastSpawn = 0;
+  let activeSparkles = 0;
 
   function spawnSparkle(x, y) {
     const now = Date.now();
-    if (now - lastSpawn < 40) return; // limit density for silky 60fps
+    if (now - lastSpawn < 90) return; // Throttled to ~11 spawns/sec maximum
+    if (activeSparkles >= 6) return; // Ceiling to prevent DOM buildup
     lastSpawn = now;
+    activeSparkles++;
 
     const sparkle = document.createElement('span');
     sparkle.className = 'fairy-dust-spark';
     sparkle.textContent = sparkSymbols[Math.floor(Math.random() * sparkSymbols.length)];
     sparkle.style.left = x + 'px';
     sparkle.style.top = y + 'px';
-    const offsetX = (Math.random() - 0.5) * 35;
-    const offsetY = -20 - Math.random() * 35;
+    const offsetX = (Math.random() - 0.5) * 30;
+    const offsetY = -15 - Math.random() * 25;
     sparkle.style.setProperty('--tx', offsetX + 'px');
     sparkle.style.setProperty('--ty', offsetY + 'px');
 
     document.body.appendChild(sparkle);
-    setTimeout(() => sparkle.remove(), 750);
+    setTimeout(() => {
+      sparkle.remove();
+      activeSparkles = Math.max(0, activeSparkles - 1);
+    }, 550);
   }
 
   window.addEventListener('mousemove', (e) => {
     spawnSparkle(e.clientX, e.clientY);
-  }, { passive: true });
-
-  window.addEventListener('touchmove', (e) => {
-    if (e.touches && e.touches[0]) {
-      spawnSparkle(e.touches[0].clientX, e.touches[0].clientY);
-    }
   }, { passive: true });
 })();
 
